@@ -1,0 +1,10 @@
+let blob = new Blob([`YOUR GAME CODE HERE`], {type: "text/html"});
+
+let a = document.createElement("a");
+
+a.href = URL.createObjectURL(blob);
+
+a.download = "freddy.html";
+
+a.click();
+
